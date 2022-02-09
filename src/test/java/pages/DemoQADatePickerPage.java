@@ -39,9 +39,10 @@ public class DemoQADatePickerPage {
 	public void  pickADate(String date) {
 		
 		String [] dates = date.split("/");
-		//turn the month into int
 		
+		//turn the month into int
 		String monthOutofArray = dates[0];
+		
 		if (monthOutofArray.contains("0")) {
 			 month =	Integer.parseInt(monthOutofArray.substring(1));
 		}else {
@@ -49,7 +50,6 @@ public class DemoQADatePickerPage {
 		}
 		
 		// get the date out of String array
-		 
 		if (dates[1].contains("0")) {
 			day = dates[1].substring(1);
 		}else {

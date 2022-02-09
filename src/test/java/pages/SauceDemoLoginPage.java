@@ -24,7 +24,7 @@ public class SauceDemoLoginPage {
 	@FindBy (id = "login-button")
 	public WebElement loginButton;
 	
-	@FindBy (css = ".title")
+	@FindBy (xpath = "//span[text()='Products']")
 	public WebElement inventoryPageProductText;
 	
 	@FindBy (css = ".inventory_item")
