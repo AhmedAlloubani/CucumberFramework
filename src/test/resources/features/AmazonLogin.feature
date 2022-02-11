@@ -32,7 +32,7 @@
  
  
   @amazonLogin @amazonInvalidUser
-  Scenario: yoy sould not be directed to the password field when email is not valid
+  Scenario: you should not be directed to the password field when email is not valid
   Given I am on the loging page 
   When I enter invalid email "jon.dow@gmail"
   And I click the continue button 
