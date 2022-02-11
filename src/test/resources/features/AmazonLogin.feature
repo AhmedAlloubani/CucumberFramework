@@ -22,7 +22,7 @@
   I want to be able to login with valid credentials.
   I should not be logged in with invalid credentials.
 
-  @amazonLogin @SmokeTest
+  @amazonLogin @SmokeTests
   Scenario: User should be directed to login page
   Given I am on Amazon home page
   And The sign in button displays
