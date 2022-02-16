@@ -1,6 +1,8 @@
 package utilities;
 
+
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxBinary;
@@ -60,6 +62,7 @@ public class Driver {
 				opts.addArguments("--headless");
 				opts.addArguments("--disable-gpu");
 				opts.addArguments("--no-sandbox");
+				opts.addArguments("--window-size=1920,1080");
 				driver = new ChromeDriver(opts);
 			}
 		}
