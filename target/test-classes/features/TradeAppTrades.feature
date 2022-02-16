@@ -1,7 +1,7 @@
 Feature: AS a user, I am able to perform Trade app Add trade functions
   I want to add, delete and update trades
 
-  @AddTrade @SmokeTest
+  @AddTrade @SmokeTests
   Scenario: As a user, I want to add a trade
     Given I am on the Trade App login page
     When I enter username "Ahmad" password "SuperAhmad123!"
@@ -14,7 +14,7 @@ Feature: AS a user, I am able to perform Trade app Add trade functions
     Then The trade is displayed on the trade table
     And The data is deleted on the Database
 
-  @AddTradeWithDataTable @SmokeTest
+  @AddTradeWithDataTable @SmokeTests
   Scenario: As a user, I want to add a trade
     Given I am on the Trade App login page
     When I enter username "Ahmad" password "SuperAhmad123!"
@@ -29,7 +29,7 @@ Feature: AS a user, I am able to perform Trade app Add trade functions
     And The data is deleted on the Database
     
     
-    @AddTradeAndValidate @SmokeTest
+    @AddTradeAndValidate @SmokeTests
   Scenario: As a user, I want to add a trade
     Given I am on the Trade App login page
     When I enter username "Ahmad" password "SuperAhmad123!"
@@ -44,7 +44,7 @@ Feature: AS a user, I am able to perform Trade app Add trade functions
     And The trade data resides in database correctly
     And The data is deleted on the Database
     
-    @InsertDB @SmokeTest
+    @InsertDB @SmokeTests
     Scenario: As a user, I am able to insert a trade to Database
     Given I executed Insert query with the following data to Database
     |'25'|'2'|'0'|'Jiraa'|'2021-02-10'|'700.0'|'2024-12-30'|'900.0'|'0'|
