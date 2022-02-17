@@ -13,7 +13,7 @@ public class AmazonLoginPage {
 	}
 	
 	
-	@FindBy (id = "nav-link-accountList-nav-line-1")
+	@FindBy (xpath = "//span[@id='nav-link-accountList-nav-line-1']")
 	public WebElement signInBtn;
 	
 	@FindBy (id = "ap_email")

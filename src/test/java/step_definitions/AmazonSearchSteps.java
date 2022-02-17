@@ -7,15 +7,18 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import pages.AmazonSearchPage;
+import utilities.BrowserUtils;
 
 public class AmazonSearchSteps {
 	
 	AmazonSearchPage searchPage;
+	BrowserUtils util;
 	
 	// Amazon search #Starts 
 	@When("I search item {string}")
 	public void i_search_item(String item) {
 	   searchPage = new AmazonSearchPage();
+	   util = new BrowserUtils();
 	   searchPage.searchBox.sendKeys(item);
 	}
 	@When("I click search button")

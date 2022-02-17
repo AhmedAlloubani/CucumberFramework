@@ -6,13 +6,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.AmazonLoginPage;
+import utilities.BrowserUtils;
 import utilities.Driver;
 import utilities.PropertiesReader;
 
 public class AmazonLoginSteps {
 	
 	AmazonLoginPage amazonlp;
-	
+	BrowserUtils util;
 	
 	@Given("I am on Amazon home page")
 	public void i_am_on_amazon_home_page() {
@@ -24,6 +25,9 @@ public class AmazonLoginSteps {
 	@Given("The sign in button displays")
 	public void the_sign_in_button_displays() {
 		amazonlp = new AmazonLoginPage();
+		util =new BrowserUtils();
+		
+		util.waitUntilElementVisible(amazonlp.signInBtn);
 		Assert.assertTrue(amazonlp.signInBtn.isDisplayed());
 		
 	}
@@ -43,8 +47,11 @@ public class AmazonLoginSteps {
 	@Given("I am on the loging page")
 	public void i_am_on_the_loging_page() {
 		amazonlp = new AmazonLoginPage();
+		util =new BrowserUtils();
 		Driver.getDriver().get(PropertiesReader.getProperty("amazonUrl"));
 		amazonlp.signInBtn.click();
+		
+		util.waitUntilElementVisible(amazonlp.emailBox);
 		Assert.assertTrue(amazonlp.emailBox.isDisplayed());
 	}
 	@When("I enter invalid email {string}")
