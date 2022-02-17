@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-16T18:24:53.385Z",
+        "start_timestamp": "2022-02-16T19:00:31.543Z",
         "before": [
           {
             "result": {
-              "duration": 1974228000,
+              "duration": 1919985000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 90015000,
+              "duration": 80625000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1055375000,
+              "duration": 1062322000,
               "status": "passed"
             },
             "line": 49,
@@ -62,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 417845000,
+              "duration": 396523000,
               "status": "passed"
             },
             "line": 51,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 273129000,
+              "duration": 288673000,
               "status": "passed"
             },
             "line": 52,
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 752463000,
+              "duration": 761875000,
               "status": "passed"
             },
             "line": 53,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 44908000,
+              "duration": 43513000,
               "status": "passed"
             },
             "line": 54,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 99724000,
+              "duration": 133286000,
               "status": "passed"
             },
             "line": 55,
@@ -138,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 150890000,
+              "duration": 152548000,
               "status": "passed"
             },
             "line": 56,
@@ -150,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 98817000,
+              "duration": 110693000,
               "status": "passed"
             },
             "line": 57,
@@ -162,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 333459000,
+              "duration": 345739000,
               "status": "passed"
             },
             "line": 58,
@@ -176,6 +176,9 @@
         "tags": [
           {
             "name": "@InsertDB"
+          },
+          {
+            "name": "@SmokeTests"
           }
         ]
       }

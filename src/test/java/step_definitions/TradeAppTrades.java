@@ -3,18 +3,8 @@ package step_definitions;
 
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-
-
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,7 +19,7 @@ public class TradeAppTrades {
 	
 	TradeAppTradesPage tradePage;
 	
-	WebDriverWait wait;
+
 	
 	BrowserUtils utils = new BrowserUtils();
 	
@@ -201,18 +191,8 @@ public class TradeAppTrades {
 	@When("I serach the {string}")
 	public void i_serach_the(String tradeSymbol) {
 		tradePage = new TradeAppTradesPage();
-		wait = new WebDriverWait(Driver.getDriver(), 20);
-	//	JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-		
-	
-		
-//		email_box=WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//input[@type='email']")))
-//				driver.implicitly_wait(2)
-//				email_box.send_keys('example@gmail.com')
-		
-		String xpath = "//input[@placeholder='Symbol']";
-		tradePage.symbolBox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
-		//Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		utils.waitUntilElementVisible(tradePage.symbolBox);
 		tradePage.symbolBox.sendKeys(tradeSymbol);
 		
 		

@@ -1,3 +1,4 @@
+@Regression
 Feature: AS a user, I am able to perform Trade app Add trade functions
   I want to add, delete and update trades
 
